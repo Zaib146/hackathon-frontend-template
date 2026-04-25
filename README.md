@@ -1,16 +1,144 @@
-# React + Vite
+# 🚀 Study Planner Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite frontend for the Study Planner application.
+Built for fast development, clean UI, and seamless integration with a FastAPI backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🧠 Features
 
-## React Compiler
+* 📚 View all study plans
+* ➕ Create new study plans
+* ✏️ Update existing plans
+* ❌ Delete study plans
+* ⚡ Fast UI powered by Vite
+* 🔗 Connected to FastAPI backend API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Vite
+* JavaScript (ES6+)
+* CSS
+* Axios / Fetch API
+
+---
+
+## 📁 Project Structure
+
+hackathon-frontend-template/
+│── public/
+│── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── styles.css
+│── index.html
+│── package.json
+│── start_frontend.sh
+
+---
+
+## ⚙️ Setup & Run
+
+### 1. Install dependencies
+
+npm install
+
+---
+
+### 2. Start frontend
+
+npm run dev
+
+OR use your script:
+
+./start_frontend.sh
+
+---
+
+### 3. Open in browser
+
+http://localhost:5173
+
+*(Port may change if already in use)*
+
+---
+
+## 🔗 Backend Connection
+
+Make sure your backend is running:
+
+http://localhost:8000
+
+Example API endpoint used:
+
+GET /study-plans
+
+If needed, update API base URL inside your frontend code.
+
+---
+
+## 🧪 Example Workflow
+
+1. Start backend
+2. Start frontend
+3. Open browser
+4. Create / view study plans
+5. Data persists via API
+
+---
+
+## 🚀 One-Click Run (Recommended)
+
+If you created the full stack script:
+
+./start_full_stack.sh
+
+This will:
+
+* Start backend
+* Start frontend
+* Open browser automatically
+
+---
+
+## 📦 Deployment (Optional)
+
+To build for production:
+
+npm run build
+
+Output will be in:
+
+dist/
+
+---
+
+## ⚠️ Important Notes
+
+* node_modules/ is ignored via .gitignore
+* .env should NOT be committed
+* Make sure backend CORS is enabled
+
+---
+
+## 👤 Author
+
+Shahzaib Hayat
+
+---
+
+## 💡 Future Improvements
+
+* Authentication (login/signup)
+* Better UI (Tailwind / Material UI)
+* Dark mode toggle
+* Deployment (Vercel / Netlify)
+
+---
+
+
+That wins more than complexity.
