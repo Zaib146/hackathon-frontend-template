@@ -61,18 +61,14 @@ function App() {
         <button type="submit">Add Plan</button>
       </form>
 
-      {plans.length === 0 ? (
-        <p>No plans yet...</p>
-      ) : (
-        plans.map((plan) => (
-          <div className="card" key={plan.id}>
-            <h3>{plan.topic}</h3>
-            <p>{plan.description}</p>
-            <p>Difficulty: {plan.difficulty}</p>
-            <p>Deadline: {plan.deadline}</p>
-          </div>
-        ))
-      )}
+      {plans.map((plan) => (
+        <div className="card" key={plan.id}>
+          <h3>{plan.topic}</h3>
+          <p>{plan.description}</p>
+          <p>Difficulty: {plan.difficulty}</p>
+          <p>Deadline: {plan.deadline}</p>
+        </div>
+      ))}
     </div>
   );
 }
